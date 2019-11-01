@@ -23,15 +23,15 @@ const inputBox3 = document.getElementById('input3')
 
 /*----- event listeners -----*/
 
-plusBtn.addEventListener('click', drag)
-minusBtn.addEventListener('click', drag)
-multiplyBtn.addEventListener('click', drag)
-divideBtn.addEventListener('click', drag)
+// plusBtn.addEventListener('click', drag)
+// minusBtn.addEventListener('click', drag)
+// multiplyBtn.addEventListener('click', drag)
+// divideBtn.addEventListener('click', drag)
 
 inputBox1.addEventListener('dragend', replace1)
 
 /*----- functions -----*/
 
 function replace1(){
-    
+    inputBox1.classList.add('plus')
 }
