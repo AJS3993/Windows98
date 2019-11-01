@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(85, 135, 192);
+    background-color: rgb(124, 192, 85);
 }
 
 h1 {
@@ -14,9 +14,10 @@ body {
 
 div {
     display: flex;
-    /* padding: 5px; */
-    border: 2px solid black;
+    /* padding: 5px;
+    border: 2px solid black; */
     flex-direction: row;
+    margin: 25px;
 }
 
 
@@ -25,6 +26,9 @@ div #signs {
         flex-direction: row;
         margin: 0;
         padding: 0;
+        margin: none;
+        border: none;
+        
 }
 
 div #numbers {
@@ -32,4 +36,17 @@ div #numbers {
     flex-direction: row;
     margin: 0;
     padding: 0;
+    margin: none;
+    border: none;
+}
+
+div.sign{
+    padding: 50px;
+    border: 2px solid black;
+}
+
+div.number{
+    padding: 50px;
+    border: 2px solid black; 
+    border-radius: 100%;
 }
