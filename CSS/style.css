@@ -17,7 +17,7 @@ div {
     /* padding: 5px;
     border: 2px solid black; */
     flex-direction: row;
-    margin: 25px;
+    margin: 15px;
 }
 
 
@@ -28,8 +28,7 @@ div #signs {
         padding: 0;
         margin: none;
         border: none;
-        
-}
+        }
 
 div #numbers {
  
@@ -41,11 +40,54 @@ div #numbers {
 }
 
 div.sign{
-    padding: 50px;
+    padding: 40px;
     border: 2px solid black;
+    font-size: 65px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+
+div.sign:hover{
+    background-color:  rgb(81, 128, 54);
 }
 
 div.number{
+    padding: 40px;
+    border: 2px solid black; 
+    border-radius: 100%;
+    font-size: 50px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+
+div.number:hover{
+    background-color:  rgb(81, 128, 54);
+}
+
+div.input{
+    background-color:  rgb(81, 128, 54);
+    height: 40px;
+    width: 40px;
+}
+
+div.input:hover{
+    background-color: rgb(124, 192, 85);
+}
+
+div #input1{
+    padding: 50px;
+    border: 2px solid black; 
+    border-radius: 100%;
+}
+
+div #input2{
+    padding: 50px;
+    border: 2px solid black; 
+}
+
+div #input3{
     padding: 50px;
     border: 2px solid black; 
     border-radius: 100%;
