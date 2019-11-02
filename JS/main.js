@@ -33,5 +33,5 @@ inputBox1.addEventListener('dragend', replace1)
 /*----- functions -----*/
 
 function replace1(){
-    inputBox1.classList.add('plus')
+    inputBox1.innerText = "ghjk"
 }
