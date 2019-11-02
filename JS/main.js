@@ -23,15 +23,16 @@ const inputBox3 = document.getElementById('input3')
 
 /*----- event listeners -----*/
 
-// plusBtn.addEventListener('click', drag)
-// minusBtn.addEventListener('click', drag)
-// multiplyBtn.addEventListener('click', drag)
-// divideBtn.addEventListener('click', drag)
+plusBtn.addEventListener('click', numSelect)
+minusBtn.addEventListener('click', numSelect)
+multiplyBtn.addEventListener('click', numSelect)
+divideBtn.addEventListener('click', numSelect)
 
-inputBox1.addEventListener('dragend', replace1)
+// inputBox1.addEventListener('dragend', replace1)
 
 /*----- functions -----*/
 
-function replace1(){
-    inputBox1.innerText = "ghjk"
-}
+// function numSelect(){
+//     const box1Val = document.getElementById('input1')
+//     box1Val = 
+// }
