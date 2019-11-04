@@ -28,6 +28,10 @@ const inputBox3 = document.querySelector('#input3');
 
 const result = document.querySelector('#result');
 
+const lvlBox = document.querySelector('#lvlNum');
+const trgBox = document.querySelector('#targNum');
+const scrBox = document.querySelector('#scoreNum');
+
 /*----- event listeners -----*/
 
 plusBtn.addEventListener('click', signSelect1)
@@ -60,6 +64,23 @@ function numSelect1(){
 }
 
 function calculate(){
-    calcNum = num1 + num2;
+    if (sign == '+'){
+    calcNum = parseInt(num1, 10) + parseInt(num2, 10)
+    result.textContent = calcNum;
+    }
+    if (sign == '-'){
+        calcNum = parseInt(num1, 10) - parseInt(num2, 10)
+    result.textContent = calcNum;
+    }
+    if (sign == 'x'){
+        calcNum = parseInt(num1, 10) * parseInt(num2, 10)
     result.textContent = calcNum;
 }
+if (sign == '÷'){
+    calcNum = parseInt(num1, 10) / parseInt(num2, 10)
+result.textContent = calcNum;
+}
+}
+
+scrBox.textContent = score;
+lvlBox.textContent = lvl;
