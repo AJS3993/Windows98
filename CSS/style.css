@@ -1,11 +1,20 @@
 
-h1 {
-    text-align: center;
+P {
     font-size: 50px;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
 section {
-    border: 2px solid black;
+    border: 8px solid rgb(180, 89, 56);
     background-color: rgb(245, 122, 78, .8);
 }
 
@@ -33,7 +42,7 @@ div #signs {
         padding: 0;
         margin: none;
         border: none;
-        }
+    }
 
 div #numbers {
  
@@ -46,24 +55,24 @@ div #numbers {
 
 div.sign{
     padding: 40px;
-    border: 2px solid black;
+    background-color: rgb(46, 46, 116, 0.8);
     font-size: 45px;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     align-items: center;
 }
 
 div.sign:hover{
-    background-color: rgb(245, 122, 78, 0.9);
+    background-color: rgb(46, 46, 116, 1);
 }
 
 div.number{
     padding: 40px;
-    border: 2px solid black; 
+    background-color: rgb(238, 163, 136); 
     border-radius: 100%;
     font-size: 30px;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     align-items: center;
 }
 
@@ -73,39 +82,49 @@ div.number:hover{
 
 div.input{
     background-color:  rgba(117, 110, 94, 0.8);
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
-div.input:hover{
+div #input1:hover{
+    background-color: rgb(245, 122, 78, 1);
+}
+
+div #input2:hover{
+    background-color: rgb(46, 46, 116, 0.9);
+}
+
+div #input3:hover{
     background-color: rgb(245, 122, 78, 1);
 }
 
 div #input1{
     padding: 50px;
-    border: 2px solid black; 
+    border: 2px solid rgb(238, 163, 136); 
     border-radius: 100%;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 div #input2{
     padding: 50px;
     border: 2px solid black; 
     font-size: 45px;
+    border: 3px solid rgb(46, 46, 116);
 }
 
 div #input3{
     padding: 50px;
-    border: 2px solid black; 
+    border: 2px  solid rgb(238, 163, 136); 
     border-radius: 100%;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 div #result{
     padding: 50px;
     border: 2px solid black; 
-    background-color: rgb(144, 150, 209);
-    height: 30px;
-    width: 30px;
+    background-color: rgb(74, 82, 156, .9);
+    height: 25px;
+    width: 25px;
     border-radius: 30px;
 }
+

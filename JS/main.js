@@ -40,7 +40,6 @@ numBtn2.addEventListener('click', numSelect1)
 numBtn3.addEventListener('click', numSelect1)
 numBtn4.addEventListener('click', numSelect1)
 
-// inputBox1.addEventListener('dragend', replace1)
 
 /*----- functions -----*/
 
@@ -50,13 +49,17 @@ function signSelect1(){
 }
 
 function numSelect1(){
-    num = this.textContent;
     if (inputBox1.textContent == ""){
-    inputBox1.textContent = num
-    }
-else { inputBox3.textContent = num
-
+    num1 = this.textContent
+    inputBox1.textContent = num1
+} else { 
+    num2 = this.textContent
+    inputBox3.textContent = num2
+    calculate()
 }
 }
 
-result = inputBox1.textContent
+function calculate(){
+    calcNum = num1 + num2;
+    result.textContent = calcNum;
+}
