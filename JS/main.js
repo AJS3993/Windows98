@@ -6,9 +6,13 @@ console.log('javascript file loaded')
 
 /*----- app's state (variables) -----*/
 
-const score = 0;
+const str = 0;
+
 const lvl = 1;
+
 const dif = 1;
+
+const trg = 5;
 
 /*----- cached element references -----*/
 
@@ -30,7 +34,7 @@ const result = document.querySelector('#result');
 
 const lvlBox = document.querySelector('#lvlNum');
 const trgBox = document.querySelector('#targNum');
-const scrBox = document.querySelector('#scoreNum');
+const strBox = document.querySelector('#strikeNum');
 
 /*----- event listeners -----*/
 
@@ -50,6 +54,7 @@ numBtn4.addEventListener('click', numSelect1)
 function signSelect1(){
     sign = this.textContent;
    inputBox2.textContent = sign
+   calculate()
 }
 
 function numSelect1(){
@@ -82,5 +87,6 @@ result.textContent = calcNum;
 }
 }
 
-scrBox.textContent = score;
+strBox.textContent = str;
 lvlBox.textContent = lvl;
+trgBox.textContent = trg;
