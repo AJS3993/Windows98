@@ -26,6 +26,8 @@ const inputBox1 = document.querySelector('#input1');
 const inputBox2 = document.querySelector('#input2');
 const inputBox3 = document.querySelector('#input3');
 
+const result = document.querySelector('#result');
+
 /*----- event listeners -----*/
 
 plusBtn.addEventListener('click', signSelect1)
@@ -49,10 +51,12 @@ function signSelect1(){
 
 function numSelect1(){
     num = this.textContent;
-    if (inputBox1.textContent = ''){
+    if (inputBox1.textContent == ""){
     inputBox1.textContent = num
     }
 else { inputBox3.textContent = num
 
 }
 }
+
+result = inputBox1.textContent
