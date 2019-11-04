@@ -12,27 +12,27 @@ const dif = 1;
 
 /*----- cached element references -----*/
 
-const plusBtn = document.getElementById('plus')
-const minusBtn = document.getElementById('minus')
-const multiplyBtn = document.getElementById('multiply')
-const divideBtn = document.getElementById('divide')
+var plusBtn = document.querySelector('#plus');
+const minusBtn = document.querySelector('#minus');
+const multiplyBtn = document.querySelector('#multiply');
+const divideBtn = document.querySelector('#divide');
 
-const inputBox1 = document.getElementById('input1')
-const inputBox2 = document.getElementById('input2')
-const inputBox3 = document.getElementById('input3')
+const inputBox1 = document.getElementById('#input1');
+const inputBox2 = document.getElementById('#input2');
+const inputBox3 = document.getElementById('#input3');
 
 /*----- event listeners -----*/
 
-plusBtn.addEventListener('click', numSelect)
-minusBtn.addEventListener('click', numSelect)
-multiplyBtn.addEventListener('click', numSelect)
-divideBtn.addEventListener('click', numSelect)
+plusBtn.addEventListener('click', numSelect1)
+minusBtn.addEventListener('click', numSelect1)
+multiplyBtn.addEventListener('click', numSelect1)
+divideBtn.addEventListener('click', numSelect1)
 
 // inputBox1.addEventListener('dragend', replace1)
 
 /*----- functions -----*/
 
-// function numSelect(){
-//     const box1Val = document.getElementById('input1')
-//     box1Val = 
-// }
+function numSelect1(){
+    const val = this.textContent
+    console.log(val)
+}
