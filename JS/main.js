@@ -6,13 +6,15 @@ console.log('javascript file loaded')
 
 /*----- app's state (variables) -----*/
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ,13, 14, 15, 16, 17, 18, 19, 20];
+
+const signs = ['+', '-', '*', '/'];
+
 const str = 0;
 
 const lvl = 1;
 
-const dif = 1;
-
-const trg = 5;
+const targetPicker = [];
 
 /*----- cached element references -----*/
 
@@ -51,6 +53,33 @@ numBtn4.addEventListener('click', numSelect1)
 
 /*----- functions -----*/
 
+
+function numPicker(){
+
+numBtn1.textContent = Math.floor(Math.random() * numbers.length);
+numBtn2.textContent = Math.floor(Math.random() * numbers.length);
+numBtn3.textContent = Math.floor(Math.random() * numbers.length);
+numBtn4.textContent = Math.floor(Math.random() * numbers.length);
+
+
+targetPicker.push(numBtn1.textContent);
+targetPicker.push(numBtn2.textContent);
+targetPicker.push(numBtn3.textContent);
+targetPicker.push(numBtn4.textContent);
+
+
+ansNum1 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
+ansNum2 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
+multiplier = signs[Math.floor(Math.random() * signs.length)];
+
+trg = eval(ansNum1 + multiplier + ansNum2)
+
+}
+
+numPicker();
+
+
+
 function signSelect1(){
     sign = this.textContent;
    inputBox2.textContent = sign
@@ -87,6 +116,22 @@ result.textContent = calcNum;
 }
 }
 
+function check(){
+    if (calcNum == trg){
+        lvl +=1
+        numPicker()
+    }
+    else{
+        str +=1
+        numPicker()
+    }
+}
+
+if (inputBox3.textContent.length != 0){
+    check();
+}
+
 strBox.textContent = str;
 lvlBox.textContent = lvl;
 trgBox.textContent = trg;
+
