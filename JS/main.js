@@ -155,10 +155,16 @@ function check(){
         document.querySelector('#targNum').style.color = 'red'
         document.querySelector('#result').style.color = 'red'
         document.querySelector('#strikeNum').style.color = 'red'
+        loseCheck()
         setTimeout(numPicker,3000)
     }
 }
 
+function loseCheck(){
+    if (str==3){
+        location.reload();
+    }
+}
 
 
 strBox.textContent = str
