@@ -78,6 +78,7 @@ targetPicker.push(numBtn4.textContent);
 ansNum1 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
 ansNum2 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
 multiplier = signs[Math.floor(Math.random() * signs.length)];
+console.log(ansNum1 + multiplier + ansNum2)
 
 trg = eval(ansNum1 + multiplier + ansNum2);
 trgBox.textContent = trg;
@@ -147,7 +148,7 @@ function check(){
         lvlBox.textContent = lvl
         document.querySelector('#targNum').style.color = "green"
         document.querySelector('#result').style.color = 'green'
-        setTimeout(numPicker,3000)
+        setTimeout(numPicker,2000)
     }
     else{
         str ++;
@@ -156,7 +157,7 @@ function check(){
         document.querySelector('#result').style.color = 'red'
         document.querySelector('#strikeNum').style.color = 'red'
         loseCheck()
-        setTimeout(numPicker,3000)
+        setTimeout(numPicker,2000)
     }
 }
 
@@ -169,4 +170,3 @@ function loseCheck(){
 
 strBox.textContent = str
 lvlBox.textContent = lvl
-
