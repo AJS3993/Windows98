@@ -1,4 +1,4 @@
-console.log('javascript file loaded')
+
 
 /*----- constants -----*/
 
@@ -10,11 +10,13 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ,13, 14, 15, 16, 17, 18, 
 
 const signs = ['+', '-', '*', '/'];
 
-const str = 0;
+var str = 0;
 
-const lvl = 1;
+var lvl = 1;
 
 const targetPicker = [];
+
+
 
 /*----- cached element references -----*/
 
@@ -61,6 +63,7 @@ numBtn2.textContent = Math.floor(Math.random() * numbers.length);
 numBtn3.textContent = Math.floor(Math.random() * numbers.length);
 numBtn4.textContent = Math.floor(Math.random() * numbers.length);
 
+const targetPicker = []
 
 targetPicker.push(numBtn1.textContent);
 targetPicker.push(numBtn2.textContent);
@@ -72,12 +75,16 @@ ansNum1 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
 ansNum2 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
 multiplier = signs[Math.floor(Math.random() * signs.length)];
 
-trg = eval(ansNum1 + multiplier + ansNum2)
-
+trg = eval(ansNum1 + multiplier + ansNum2);
+trgBox.textContent = trg;
+inputBox1.textContent = ""
+inputBox2.textContent = ""
+inputBox3.textContent = ""
+result.textContent = ""
 }
 
-numPicker();
 
+numPicker();
 
 
 function signSelect1(){
@@ -94,6 +101,7 @@ function numSelect1(){
     num2 = this.textContent
     inputBox3.textContent = num2
     calculate()
+    check()
 }
 }
 
@@ -114,24 +122,23 @@ if (sign == '÷'){
     calcNum = parseInt(num1, 10) / parseInt(num2, 10)
 result.textContent = calcNum;
 }
+
 }
+
 
 function check(){
     if (calcNum == trg){
-        lvl +=1
+        lvl ++;
+        lvlBox.textContent = lvl
         numPicker()
     }
     else{
-        str +=1
-        numPicker()
+        str ++;
+        strBox.textContent = str
+        numPicker();
     }
 }
 
-if (inputBox3.textContent.length != 0){
-    check();
-}
-
-strBox.textContent = str;
-lvlBox.textContent = lvl;
-trgBox.textContent = trg;
+strBox.textContent = str
+lvlBox.textContent = lvl
 
