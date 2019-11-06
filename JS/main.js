@@ -58,6 +58,9 @@ numBtn4.addEventListener('click', numSelect1)
 
 function numPicker(){
 
+    document.querySelector('#targNum').style.color = "black"
+    document.querySelector('#result').style.color = 'black'
+
 numBtn1.textContent = Math.floor(Math.random() * numbers.length);
 numBtn2.textContent = Math.floor(Math.random() * numbers.length);
 numBtn3.textContent = Math.floor(Math.random() * numbers.length);
@@ -69,6 +72,7 @@ targetPicker.push(numBtn1.textContent);
 targetPicker.push(numBtn2.textContent);
 targetPicker.push(numBtn3.textContent);
 targetPicker.push(numBtn4.textContent);
+
 
 
 ansNum1 = targetPicker[Math.floor(Math.random() * targetPicker.length)];
@@ -90,7 +94,7 @@ numPicker();
 function signSelect1(){
     sign = this.textContent;
    inputBox2.textContent = sign
-   calculate()
+   readyToCalculate()
 }
 
 function numSelect1(){
@@ -100,10 +104,21 @@ function numSelect1(){
 } else { 
     num2 = this.textContent
     inputBox3.textContent = num2
-    calculate()
-    check()
+    readyToCalculate()
 }
 }
+
+function readyToCalculate(){
+    if (inputBox1.textContent != ""){
+        if (inputBox2.textContent != ""){
+            if (inputBox3.textContent != ""){
+                calculate()
+                check()
+            }
+        }
+    }
+}
+
 
 function calculate(){
     if (sign == '+'){
@@ -130,14 +145,21 @@ function check(){
     if (calcNum == trg){
         lvl ++;
         lvlBox.textContent = lvl
-        numPicker()
+        document.querySelector('#targNum').style.color = "green"
+        document.querySelector('#result').style.color = 'green'
+        setTimeout(numPicker,3000)
     }
     else{
         str ++;
         strBox.textContent = str
-        numPicker();
+        document.querySelector('#targNum').style.color = 'red'
+        document.querySelector('#result').style.color = 'red'
+        document.querySelector('#strikeNum').style.color = 'red'
+        setTimeout(numPicker,3000)
     }
 }
+
+
 
 strBox.textContent = str
 lvlBox.textContent = lvl

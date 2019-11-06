@@ -15,7 +15,7 @@ h2 {
 
 section {
     border: 8px solid rgb(180, 89, 56);
-    background-color: rgb(245, 122, 78, .8);
+    background-color: rgb(245, 122, 78, .9);
 }
 
 
@@ -103,7 +103,7 @@ div #input1{
     border: 2px solid rgb(238, 163, 136); 
     border-radius: 100%;
     font-size: 30px;
-    background-color: rgb(245, 122, 78, 0.5);
+    background-color: rgb(238, 163, 136, 0.9);
 }
 
 div #input2{
@@ -111,7 +111,7 @@ div #input2{
     border: 2px solid black; 
     font-size: 45px;
     border: 3px solid rgb(46, 46, 116);
-    background-color: rgb(46, 46, 116, 0.5);
+    background-color: rgb(46, 46, 116, 0.9);
 }
 
 div #input3{
@@ -119,7 +119,7 @@ div #input3{
     border: 2px  solid rgb(238, 163, 136,1); 
     border-radius: 100%;
     font-size: 30px;
-    background-color: rgb(245, 122, 78, 0.5);
+    background-color: rgb(238, 163, 136,0.9);
 }
 
 div #result{
