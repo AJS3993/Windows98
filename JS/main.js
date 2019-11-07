@@ -81,6 +81,11 @@ multiplier = signs[Math.floor(Math.random() * signs.length)];
 console.log(ansNum1 + multiplier + ansNum2)
 
 trg = eval(ansNum1 + multiplier + ansNum2);
+
+if (!Number.isInteger(trg)){
+    numPicker()
+}
+
 trgBox.textContent = trg;
 inputBox1.textContent = ""
 inputBox2.textContent = ""
