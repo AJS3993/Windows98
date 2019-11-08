@@ -34,6 +34,8 @@ Click two number buttons and a math function to create the target number. Number
 
 ## future goals
 
+* clear input button
+
 * add 5 input boxes
 
 * change difficulty
