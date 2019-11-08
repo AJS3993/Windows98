@@ -16,9 +16,9 @@ Teach math to kids
 
 ## Wireframes
 
-<img src='https://wireframe.cc/U8pFw4'>
+[Imgur](https://i.imgur.com/u0soCmq.png)
 
-<img src='https://imgur.com/bXRWPGA'>
+[Imgur](https://i.imgur.com/bXRWPGA.png)
 
 ## Tech
 
