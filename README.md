@@ -4,10 +4,9 @@
 
 ## Purpose
 
-Teach math to kids
+It never hurts to review your math skills. This game can help with your ability to quickly solve math problems with small numbers. It is currently set to use the four basic math functions: addition, subtraction, multiplication and division. The inputed numbers are 1-20. It can however be easily adapted to include different numbers and functions. Enjoy!
 
 ## User Stories
-
 * As a parent, I want my child to learn math so that they will succeed in school
 
 * As a teacher, I want educational games for my students so that they will find learning more enjoyable
