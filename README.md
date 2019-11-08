@@ -6,6 +6,10 @@
 
 It never hurts to review your math skills. This game can help with your ability to quickly solve math problems with small numbers. It is currently set to use the four basic math functions: addition, subtraction, multiplication and division. The inputed numbers are 1-20. It can however be easily adapted to include different numbers and functions. Enjoy!
 
+## Instructions
+
+Click two number buttons and a math function to create the target number. Number buttons can be used twice. Three incorrect answers will restart the game. Try to see how many questions you can get.
+
 ## User Stories
 * As a parent, I want my child to learn math so that they will succeed in school
 
@@ -27,3 +31,11 @@ It never hurts to review your math skills. This game can help with your ability 
 * CSS
 
 * Javascript
+
+## future goals
+
+* add 5 input boxes
+
+* change difficulty
+
+* timer
