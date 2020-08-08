@@ -1,26 +1,108 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Math T🎯rget</title>
-    <link rel='stylesheet' type='text/css' href='CSS/landingStyle.css'>
+	<meta charset="utf-8">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+	<link href="https://html5-templates.com/" rel="canonical">
+	<script src="https://code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+	</script>
+	<script src="JS/main.js">
+	</script>
+	<link href="CSS/landingStyle.css" rel="stylesheet" type="text/css">
+
+	<title>Windows Template</title>
 </head>
+
 <body>
-    <section>
-        <h1>Math Target</h1>
+	<section class='monitor-bezel'>
+        <div class="desktop">
+            <div class="selection-box hidden-box"></div>
+            <ul class='desktop-icons'>
+                <li class='desktop-icon'>
+                    <img src="https://img.informer.com/icons/png/48/2873/2873700.png" alt="" draggable="false" />
+                    <p draggable="false">
+                        My Computer
+                    </p>
+                </li>
+                <li class='desktop-icon'>
+                    <img src="http://vignette4.wikia.nocookie.net/logopedia/images/5/54/Mydocs99.png/revision/latest?cb=20160414125319" alt="" draggable="false" />
+                    <p draggable="false">
+                        My Documents
+                    </p>
+                </li>
+               
+                
+                <li class='desktop-icon'>
+                    <img src="http://www.it.uom.gr/project/intro/conwin/mwin8/95desktop5.gif" alt="" draggable="false" />
+                    <p draggable="false">
+                        Recycle Bin
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <section class="taskbar"></section>
+        
 
-        <div class='imgContainer'>
-        <img src='http://www.clker.com/cliparts/v/W/5/6/e/8/target-1-hi.png' style="width:450px;height:450px">
-        </div>
-        <br>
-        <div class='btnContainer'>
-        <button onclick="location.href = 'game.html';" id="startBtn" >Start</button>
-        </div>
-        <br>
-        <br>
+
+        <div class="window-container">
+            <div class="window ui-draggable ui-draggable-handle">
+            <div class="window-title">
+            Shut Down Windows
+            <div class="btn-close close">X</div>
+            </div>
+            <div class="window-body">
+            <p>What do you want the computer to do?</p>
+            <div>
+            <input id="option1" type="radio" name="field" value="option">
+            <label for="option1"><span><span></span></span>Stand By</label><br>
+            <input id="option2" type="radio" name="field" value="option" checked="">
+            <label for="option2"><span><span></span></span>Shut Down</label><br>
+            <input id="option3" type="radio" name="field" value="option">
+            <label for="option3"><span><span></span></span>Restart</label><br>
+            <input id="option4" type="radio" name="field" value="option">
+            <label for="option4"><span><span></span></span>Restart in MS-DOS mode</label><br>
+            </div>
+            </div>
+            <div class="window-button-row">
+            <a class="btn primary ok" href="">OK</a>
+            <a class="btn cancel" href="">Cancel</a>
+            <a class="btn" href="">Help</a>
+            </div>
+            </div>
+            </div>
+
+
     </section>
-
+        <div class="dock">
+            <a class="start-btn" href="#0">Start</a>
+            <div class="dock-time start__time-text">
+            
+            </div>
+            <div class="start-menu">
+                <div class="title-container">
+                  <div class="title">Windows<span>98</span></div>
+                </div>
+                <ul>
+                  <li class="windows-update menuList">Windows Update</li>
+                  <hr />
+                  <li class="programs menuList">Programs</li>
+                  <li class="favorites menuList">Favorites</li>
+                  <li class="documents menuList">Documents</li>
+                  <li class="settings menuList">Settings</li>
+                  <li class="find menuList">Find</li>
+                  <li class="help menuList">Help</li>
+                  <li class="run menuList">Run...</li>
+                  <hr />
+                  <li class="log-off ok menuList">Log Off</li>
+                  <li class="shut-down ok menuList">Shut Down...</li>
+                </ul>
+              </div>
+            </div>
+          
 </body>
 </html>
