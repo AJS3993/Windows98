@@ -25,6 +25,20 @@ $(document).ready(function(){
     }).mouseup(function(event){
   
     });
+
+    $('.window2').mousedown(function(event){
+      //dont draw selection box and dont removeclass
+      event.stopPropagation();
+      var thisWindow = $(this).children('.bar');
+      if(thisWindow.hasClass('selected-window')){
+  
+      } else {
+        $('.selected-window').removeClass('selected-window');
+        thisWindow.addClass('selected-window');
+      }
+    }).mouseup(function(event){
+  
+    });
   
   
     $('.desktop-icon').click(function(event){
@@ -233,11 +247,16 @@ $(document).ready(function(){
         console.log(e.metaKey );
       });
   
-      $('.window').draggable();
+      $('.window, .window2').draggable();
   
-      $('.cancel, .close').on('click', function(e){
+      $('.close').on('click', function(e){
         e.preventDefault();
        $('.window').hide();
+      });
+
+      $('.close2').on('click', function(e){
+        e.preventDefault();
+       $('.window2').hide();
       });
 
       $('.start-btn').on('click', function(e){

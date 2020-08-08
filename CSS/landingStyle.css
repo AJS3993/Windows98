@@ -128,6 +128,21 @@ background: white;
     z-index: 100;
 }
 
+.window2 {
+    font-family: 'MS Sans Serif', 'Arial', sans-serif;
+    font-size: 0.7em;
+    border: 2px solid #404040;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    cursor: default;
+    padding: .22em .22em .22em .22em;
+    display: inline-block;
+    box-shadow: inset -1px -1px 0 1px #808080;
+    background: #c0c2bf;
+    position: absolute;
+    z-index: 100;
+}
+
 .bar {
     color: white;
     font-weight: bold;
@@ -541,22 +556,6 @@ background: white;
     transform-origin: top left;
 }
 
-.taskbar {
-    position: absolute;
-    bottom: 0;
-    z-index: 9;
-    font-family: 'VT323', monospace;
-    background: #c0c2bf;
-    width: 100%;
-    height: 28px;
-    padding: .11em;
-    border-top: 2px solid white;
-    display: block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 
 .start-button {
     border: 2px solid #404040;
@@ -570,9 +569,6 @@ background: white;
     position: relative;
     margin-right: .66em;
 }
-
-
-
 
 .column-left {
     cursor: default;
@@ -603,19 +599,6 @@ background: white;
 
 .column-left span {
     font-weight: normal;
-}
-
-
-
-
-
-.start-button:active,
-.start-pressed {
-    border: 2px solid white;
-    box-shadow: inset -1px -1px 0px 1px transparent;
-    padding: .33em .22em .11em .22em;
-    border-left: 2px solid #404040;
-    border-top: 2px solid #404040;
 }
 
 
@@ -740,6 +723,21 @@ background: white;
 }
 
 .window {
+    border-top: 2px solid white;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    border-left: 2px solid white;
+    margin: 20px auto;
+    background: #c0c0c0;
+    background-image: url(https://67.media.tumblr.com/35e35eb…/tumblr_n8gxp1JWwO1r6zgh0o1_500.gif);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: 15px 55px;
+    display: inline-block;
+    position: relative;
+}
+
+.window2 {
     border-top: 2px solid white;
     border-right: 2px solid #222;
     border-bottom: 2px solid #222;
@@ -884,4 +882,42 @@ span {
 
   .start__time-text {
     font-size: 12px;
+}
+
+.content {
+    overflow: scroll;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-top: 1px solid #1F1F1F;
+    border-left: 1px solid #1F1F1F;
+}
+
+
+
+.folder {
+    flex-shrink: 0;
+    padding: 10px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.icon-folder {
+    flex-shrink: 0;
+    width: 40px;
+    height: 38px;
+    background: url(https://pbs.twimg.com/media/DPHZZNbU8AAefce.png) no-repeat -41px -332px;
+}
+
+.Ftitle {
+    text-align: center;
 }
